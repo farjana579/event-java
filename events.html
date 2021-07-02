@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exploring events</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, est.</p>
+    <button onclick="alert(7)">click me</button>
+    <button>click here</button>
+    <button>click here-1</button>
+    <button id="second">click here-2</button>
+    <button id="last">click here-3</button>
+    <script>
+        function handleClick(){
+           document.body.style.background='tomato';
+        }
+        var secondButton = document.getElementById('second')
+        secondButton.onclick=handleClick;
+        function  handleClick1(){
+            document.body.style.color='blue';
+        }
+         document.getElementById('last')
+         .addEventListener('click',handleClick1);
+    </script>
+</body>
+</html>
